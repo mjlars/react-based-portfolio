@@ -1,0 +1,257 @@
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;   
+vertical-align: baseline;  
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    max-width: 100%;
+    color: #d90d84;
+}
+
+html {
+    background-color: rgb(10, 10, 10);
+}
+
+.header {
+    border-radius: 1rem;
+    border-bottom: 4px solid #61dafb;
+    background-color: #141414;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.75rem;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 111;
+    position: absolute;
+    width: 100%;
+}
+
+.header .name, .links {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.header .links a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#about {
+    padding: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h2 {
+    border-radius: .5rem;
+    border-bottom: 2px solid #61dafb;
+}
+
+#about .bio-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+#about .bio-skills .biography {
+    width: 30rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .bio-skills .biography img {
+    width: 50%;
+    margin: 2rem;
+}
+
+#about .bio-skills .biography p {
+    color: #61dafb;
+    border-radius: .5rem;
+    padding: .25rem;
+    border-bottom: 2px solid #d90d84;
+}
+
+#about .bio-skills .skills-list {
+    width: 30rem;
+    font-size: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about .bio-skills .skills-list .skills-boxes {
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.box {
+    color: #61dafb;
+    padding: .25rem .5rem;
+    margin: .1rem;
+    border-radius: .5rem;
+    border-bottom: 2px solid #d90d84;
+}
+
+.box p {
+    color: #61dafb;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#work {
+    padding: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#work h2 {
+    border-bottom: 2px solid #61dafb;
+    border-radius: .5rem;
+}
+
+.projects {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.project-box {
+    margin: 1rem;
+    width: 25rem;
+    border-bottom: 2px solid #d90d84;
+    border-radius: 2rem;
+    background-position: center center;
+    aspect-ratio: 1 / 1;
+}
+
+.box-1 {
+    background-image: url(./components/images/square\ boi@150x.png);
+    background-size: 25rem 25rem;
+}
+
+.box-2 {
+    background-image: url(./components/images/neotheater@150x.png);
+    background-size: 25rem 25rem;
+}
+
+.box-3 {
+    background-image: url(./components/images/placeholder@150x.png);
+    background-size: 25rem 25rem;
+}
+
+.box-4 {
+    background-image: url(./components/images/placeholder@150x.png);
+    background-size: 25rem 25rem;
+}
+
+.box-5 {
+    background-image: url(./components/images/placeholder@150x.png);
+    background-size: 25rem 25rem;
+}
+
+.box-6 {
+    background-image: url(./components/images/placeholder@150x.png);
+    background-size: 25rem 25rem;
+}
+
+.project-popup {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000d2;
+    border-radius: 2rem;
+    
+    opacity: 0;
+}
+
+.project-popup h4 {
+    color:#61dafb;
+}
+
+.project-popup p {
+    font-size: 1.25rem;
+    color: #d90d84;
+}
+
+.project-popup a {
+    color: #61dafb;
+}
+
+.project-popup:hover {
+    opacity: 1;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    background-color: #141414;
+    border-top: 4px solid #61dafb;
+    border-radius: 1rem; 
+    padding: 1rem;
+    align-items: center;
+    z-index: 1111;
+    width: 100%;
+    position: absolute;
+}
+
+#contact h2 {
+    padding: 1rem;
+}
+
+#contact div {
+    font-size: 1.5rem;    
+    align-items: center;
+    text-align: center;
+}
+
+#contact div a {
+    padding: .5rem 1rem;
+    color: #61dafb;
+}
+
+.homepage {
+    height: 100vh;
+    position: relative;
+}

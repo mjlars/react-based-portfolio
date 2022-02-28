@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Homepage from './homepage';
-import About from './aboutMe';
-import Projects from './projects';
-import Contact from './contact';
-import Header from './header';
-import Footer from './footer';
+import Homepage from './components/homepage';
+import About from './components/aboutMe';
+import Projects from './components/projects';
+import Contact from './components/contact';
+import Header from './components/header';
+import Footer from './components/footer';
+import './styles.css';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
 
       <Footer/>
     </Router>
-    </div>
+    
   );
 }
 

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <div>
+        <div className='header'>
             <div className="name">
                 <h1>Matthew Larson</h1>
             </div>

@@ -2,7 +2,7 @@
 
 function Footer() {
     return (
-        <div>
+        <div id="contact">
             <div className="name">
                 <h1>Matthew Larson</h1>
             </div>
