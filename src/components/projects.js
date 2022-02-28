@@ -33,7 +33,7 @@ function Projects() {
     return(
         <div id="work">
             <h1>My Projects</h1>
-
+            <div className='projects'>
             {projectArray.map((data) => {
                 return(
 
@@ -53,7 +53,7 @@ function Projects() {
 
                 )
             })}
-            
+            </div>
         </div>
     )
 }

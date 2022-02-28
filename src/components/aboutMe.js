@@ -1,4 +1,4 @@
-
+import Logo from './images/kowalskilogo.png';
 
 function About() {
     return(
@@ -9,7 +9,7 @@ function About() {
 
             <div className="bio-skills">
                 <div className="biography">
-                    <img src="http://placehold.it/" alt="Kowalski Graphics Logo" />
+                    <img src={Logo} alt="Kowalski Graphics Logo" />
                     <p>I have done web development bootcamps through the University of Utah and Lambda School.  
                     <br />
                     Im passionate about website design and functionality and I'm always looking for ways to improve my designs.  

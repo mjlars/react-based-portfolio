@@ -128,12 +128,13 @@ html {
 }
 
 #work {
-    padding: 2rem;
+    padding-top: 5rem;
     width: 100%;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 #work h2 {
@@ -157,6 +158,8 @@ html {
     border-radius: 2rem;
     background-position: center center;
     aspect-ratio: 1 / 1;
+    background-image: url(./components/images/placeholder@150x.png);
+    background-size: 25rem 25rem;
 }
 
 .box-1 {
@@ -233,7 +236,7 @@ html {
     align-items: center;
     z-index: 1111;
     width: 100%;
-    position: absolute;
+    
 }
 
 #contact h2 {
@@ -253,5 +256,12 @@ html {
 
 .homepage {
     height: 100vh;
-    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.homepage img {
+    width: 30%;
 }
