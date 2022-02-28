@@ -1,8 +1,33 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Homepage from './homepage';
+import About from './aboutMe';
+import Projects from './projects';
+import Contact from './contact';
+import Header from './header';
+import Footer from './footer';
 
 function App() {
   return (
-    <div className="App">
-      <header>
+    <Router>
+      <Header/>
+
+      <Switch>
+        <Route exact path="/" component={Homepage}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/projects" component={Projects}/>
+        <Route exact path="/contact" component={Contact}/>
+      </Switch>
+
+      <Footer/>
+    </Router>
+    </div>
+  );
+}
+
+export default App;
+
+
+{/* <header>
         <div className="name">
           <h1>Matthew Larson</h1>
         </div>
@@ -21,7 +46,7 @@ function App() {
 
         <div className="bio-skills">
           <img src="http://placehold.it/" alt="Kowalski Graphics Logo" />
-          <p>I have done webb development bootcamps through the University of Utah and Lambda School.  
+          <p>I have done web development bootcamps through the University of Utah and Lambda School.  
             <br />
           Im passionate about website design and functionality and I'm always looking for ways to improve my designs.  
             <br />
@@ -59,9 +84,4 @@ function App() {
             <a href="https://github.com/mjlars" target="_blank" rel="noreferrer">Github</a>
             <a href="mailto:kowalskigraphics@gmail.com" >Kowalskigraphics@gmail.com</a>            
             <a href="https://www.linkedin.com/in/johnlarson4/" target="_blank" rel="noreferrer">LinkedIn</a>
-    </footer>
-    </div>
-  );
-}
-
-export default App;
+    </footer> */}
